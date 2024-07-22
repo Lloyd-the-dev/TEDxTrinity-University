@@ -75,7 +75,7 @@
   }
   @media (max-width: 952px){
     label.logo{
-      font-size: 30px;
+      font-size: 1.5rem;
       padding-left: 50px;
     }
     nav ul li a{
@@ -260,11 +260,35 @@
     width: 90%;
   }
 
+  @keyframes fade-left {
+    0%{
+      opacity: 0;
+      transform: translateX(-30px) scale(0.9);
+    }
+
+    100%{
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+  }
+  @keyframes fade-right {
+    0%{
+      opacity: 0;
+      transform: translateX(30px) scale(0.9);
+    }
+
+    100%{
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+  }
+
   .image-gallery{
     width: 60%;
     display: grid;
     grid: 150px / auto auto auto;
     gap: 5px;
+    animation: fade-left 1.5s;
   }
   .gallery-image-item{
     width: 200px;
@@ -272,6 +296,7 @@
   .section-shalaye{
     width: 40%;
     line-height: 1.8;
+    animation: fade-right 1.5s;    
   }
   .section-shalaye a{
     background: #303030;

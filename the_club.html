@@ -10,8 +10,10 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/upArrow.css">
+    <link rel="stylesheet" href="./css/the_club.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".fixed-top">
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -26,6 +28,98 @@
           <li><a href="contact.html" class="nav-links">Contact</a></li>
         </ul>
     </nav>
+
+    <div class="first-section-club">
+        <h2>TEDxTrinity University Club</h2>
+    </div>
+
+    <div class="black-background">
+        <div class="second-section-club">
+            <h2>About US</h2>
+            <div class="second-section-club-two">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem odit officiis esse repellendus. Dolores illum, facilis fugit asperiores cumque ipsum vel necessitatibus ullam possimus! Quod facilis harum accusantium fugit cum doloribus ex veniam. Enim, dolor. Sint sequi animi quas, repellat eum deserunt minima consequatur, veritatis sit, molestias adipisci aliquid libero voluptatibus facere! Laboriosam, deserunt debitis neque voluptas harum recusandae voluptatum tempora possimus itaque nihil quisquam. Beatae doloremque sit ad similique.</p>
+                <a href="#" class="button">Join the Club</a>
+            </div>
+        </div>
+    
+       <div class="card-section">
+         <article class="card">
+            <img
+              class="card__background"
+              src="./img/card-img.jpg"
+              alt=""
+              width="1920"
+              height="2193"
+            />
+            <div class="card__content | flow">
+              <div class="card__content--container | flow">
+                <i class='bx bxs-group card-icon'></i>
+                <h2 class="card__title">AUGUST 31, 2024</h2>
+                <p class="card__description">
+                 TEDxTrinity University Conference. <br>
+                 Sabo yaba, Lagos State.
+                </p>
+              </div>
+              <a href="#" class="card__button">Buy Tickets</a>
+            </div>
+          </article>
+    
+          <article class="card">
+            <img
+              class="card__background"
+              src="./img/card-img.jpg"
+              alt=""
+              width="1920"
+              height="2193"
+            />
+            <div class="card__content | flow">
+              <div class="card__content--container | flow">
+                <i class='bx bxs-group card-icon'></i>
+                <h2 class="card__title">COMING SOON....</h2>
+                <p class="card__description">
+                 TEDxTrinity University Adventures. <br>
+                 Sabo yaba, Lagos State.
+                </p>
+              </div>
+              <a href="#" class="card__button">Buy Tickets</a>
+            </div>
+          </article>
+       </div>
+    
+       <div class="events-section">
+         <h2 class="events-section-heading">TIMELINE</h2>
+         <div class="event-dates">
+            <div class="event-items">
+                <h2>fridays <span><i class='bx bx-calendar'></i></span> weekly</h2>
+                <div class="event-items-two">
+                    <h4>CLUB MEETINGS</h4>
+                    <p>Lecture room 8</p>
+                    <p>5-6PM</p>
+                    <p class="event-items-bottom">sabo, yaba</p>
+                </div>
+            </div>
+    
+            <div class="event-items">
+                <h2>august <span>28</span> 2024</h2>
+                <div class="event-items-two">
+                    <h4>TEDXTRINITY UNIVERSITY CONFERENCE- THE FUTURE</h4>
+                    <p>TU - Trinity University</p>
+                    <p class="event-items-bottom">sabo, yaba</p>
+                </div>
+            </div>
+    
+            <div class="event-items">
+                <h2>coming <span><i class='bx bx-calendar'></i></span> soon</h2>
+                <div class="event-items-two">
+                    <h4>TEDXTRINITY UNIVERSITY Skills acquisition WORKSHOP(loading) </h4>
+                    <p>TU - Trinity University</p>
+                    <p class="event-items-bottom">sabo, yaba</p>
+                </div>
+            </div>
+         </div>
+       </div>
+    </div>
+
     <footer>
         <div class="row">
             <div class="col">
@@ -39,7 +133,7 @@
                 <h3>Address <div class="bottom_line"><span></span></div></h3>
                 <p>1 FFF Road,</p>
                 <p>Off Alara St,</p>
-                <p>near Queen's College, Sabo yaba, Lagos 100001, Lagos</p>
+                <p>near Queen's College, Sabo yaba, Lagos</p>
                 <p class="footer_email">loremipsum@gmail.com</p>
                 <h4>+234 - 123456789</h4>
             </div>
@@ -70,4 +164,7 @@
         <hr>
         <p class="copyright">Lloyd the dev Ⓒ 2024 - All Rights Reserved</p>
      </footer>
+     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+     <script src="./js/index.js"></script>
 </body>
