@@ -306,8 +306,10 @@ p {
     align-items: center;
   }
     .first-section-club h2{
-        font-size: 1.2rem;
+        font-size: 3rem;
+        width: 60%;
         text-align: center;
+        margin: 0 auto;
     }
     .black-background{
       width: 100%;
