@@ -75,8 +75,8 @@
   }
   @media (max-width: 952px){
     label.logo{
-      font-size: 1.5rem;
-      padding-left: 50px;
+      font-size: 1rem;
+      margin-left: 2rem
     }
     nav ul li a{
       font-size: 16px;
@@ -86,6 +86,10 @@
     }
   }
   @media (max-width: 858px){
+    label.logo{
+      font-size: .8rem;
+      margin-left: -3rem;
+    }
     .checkbtn{
       display: block;
     }

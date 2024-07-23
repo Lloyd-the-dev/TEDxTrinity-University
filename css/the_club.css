@@ -276,9 +276,7 @@ p {
     letter-spacing: .5rem;
     font-size: 1rem;
 }
-.event-items span{
-    font-size: 3rem;
-}
+
 .event-items span{
     color: black;
     font-size: 4rem;
@@ -297,21 +295,36 @@ p {
     letter-spacing: .3rem;
 }
 @media (max-width: 890px) {
+  body{
+    padding: 0;
+    margin: 0;
+  }
+  .first-section-club{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
     .first-section-club h2{
-        font-size: 2rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .black-background{
+      width: 100%;
     }
     .second-section-club{
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         align-items: center;
         margin: 1rem auto;
     }
     .second-section-club h2{
-        font-size: 2.4rem;
-        width: 80%;
+        font-size: 2.2rem;
+        text-align: center;
+        width: 100%;
     }
     .second-section-club-two{
-        width: 100%;
+        width: 90%;
         margin: 1rem auto;
         display: flex;
         flex-direction: column;
@@ -332,10 +345,14 @@ p {
     .event-items{
         width: 100%;
         padding: .6rem;
+        flex-direction: column;
+        align-items: center;
     }
     .event-items h2{
-       width: 30%;
+       width: 100%;
        font-size: 1.2rem;
+       display: flex;
+       align-items: center;
     }
     .event-items span{
         font-size: 2rem;
