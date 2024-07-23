@@ -1,3 +1,4 @@
+
 @keyframes slideUp{
     0%{
         transform: translateY(100px);
@@ -15,8 +16,9 @@ footer{
     padding: 50px 0 30px;
     font-size: 13px;
     line-height: 20px;
+    position: relative; 
 }
-.row{
+footer .row, .rowContact{
     width: 85%;
     margin: auto;
     display: flex;
@@ -25,11 +27,11 @@ footer{
     justify-content: space-between;
 }
 
-.col{
+footer .col, .colContact{
     flex-basis: 25%;
     padding: 10px;
 }
-.col:nth-child(2), .col:nth-child(3){
+footer .col:nth-child(2), footer .col:nth-child(3), .colContact:nth-child(2), .colContact:nth-child(3){
     flex-basis: 15%;
 }
 .footer_logo{
@@ -40,9 +42,13 @@ footer{
     position: relative;
     top: -23px;
 }
-.col h3{
+.colContact h4{
+    font-size: 1rem;
+}
+
+footer .col h3, .colContact h3{
     width: fit-content;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     position: relative;
 }
 .footer_email{
@@ -50,11 +56,11 @@ footer{
     border-bottom: 1px solid #f66335;
     margin: 20px 0;
 }
-.col ul li{
+footer .col ul li, .colContact ul li{
     list-style: none;
     margin-bottom: 12px;
 }
-.col ul li a{
+footer .col ul li a, .colContact ul li a{
     text-decoration: none;
     color: #fff;
 }
@@ -65,12 +71,12 @@ footer{
     color: #303030;
 }
 @media (max-width: 890px) {
-    .row{
+    footer .row, .rowContact{
         flex-direction: column;
         width: 90%;
         align-items: center;
     }
-    .col{
+    footer .col, .colContact{
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -83,13 +89,13 @@ footer{
         width: 80%;
         text-align: center;
     }
-    .col h3{
+    footer .col h3, .colContact h3{
         font-size: 1.2rem;
     }
     .footer_email{
         font-size: 1rem;
     }
-    .col ul{
+    footer .col ul, .colContact ul{
         width: 100%;
         justify-content: space-around;
         display: flex;
@@ -103,7 +109,7 @@ footer{
 
 }
 
-.col form{
+footer .col form, .colContact form{
     padding-bottom: 15px;
     display: flex;
     align-items: center;
@@ -111,24 +117,24 @@ footer{
     border-bottom: 1px solid #f66335;
     margin-bottom: 50px;
 }
-.col form .icon{
+footer .col form .icon, .colContact form .icon{
     font-size: 18px;
     margin-right: 10px;
 }
-.col form input{
+footer .col form input, .colContact form input{
     width: 100%;
     background: transparent;
     color: #ccc;
     border: 0;
     outline: none;
 }
-.col form button{
+footer .col form button, .colContact form button{
     background: transparent;
     border: 0;
     outline: none;
     cursor: pointer;
 }
-.col form button .icon_right{
+footer .col form button .icon_right, .colContact form button .icon_right{
     font-size: 1.5rem;
     color: #ccc;
 }
@@ -168,6 +174,9 @@ footer .copyright{
     top: 25px;
     left: 0;
     overflow: hidden;
+}
+.colContact .bottom_line{
+    margin-top: .5rem;
 }
 .bottom_line span{
     width: 15px;

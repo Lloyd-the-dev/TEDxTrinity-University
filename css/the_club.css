@@ -268,6 +268,7 @@ p {
     background-color: white;
     color: black;
     margin: 1rem;
+    text-transform: uppercase;
 }
 
 .event-items h2{
