@@ -180,14 +180,14 @@ body{
         margin: 0 auto;
     }
     .seller{
-        /* margin: 0 auto; */
+        margin: 0 auto;
         width: 100%;
         justify-content: center;
     }
     .best-seller{
-        width: 100%;
+        width: 75%;
         margin: 0 auto;
-        padding: 0;
+        padding: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
