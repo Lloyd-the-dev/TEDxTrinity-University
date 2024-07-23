@@ -1,3 +1,9 @@
+// gsap code        
+        gsap.to('.section-shalaye',{
+            duration: 3, x:-50, ease: "elastic", scrollTrigger: ".trigger"
+        })
+  
+
 
 (function($) {
     "use strict"; 
@@ -64,3 +70,4 @@
 	});
 
 })(jQuery);
+

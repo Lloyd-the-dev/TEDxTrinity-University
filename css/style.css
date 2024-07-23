@@ -264,28 +264,7 @@
     width: 90%;
   }
 
-  @keyframes fade-left {
-    0%{
-      opacity: 0;
-      transform: translateX(-30px) scale(0.9);
-    }
 
-    100%{
-      opacity: 1;
-      transform: translateX(0px) scale(1);
-    }
-  }
-  @keyframes fade-right {
-    0%{
-      opacity: 0;
-      transform: translateX(30px) scale(0.9);
-    }
-
-    100%{
-      opacity: 1;
-      transform: translateX(0px) scale(1);
-    }
-  }
 
   .image-gallery{
     width: 60%;
@@ -299,9 +278,9 @@
   }
   .section-shalaye{
     width: 40%;
-    line-height: 1.8;
-    animation: fade-right 1.5s;    
+    line-height: 1.8; 
   }
+  
   .section-shalaye a{
     background: #303030;
     color: white;
