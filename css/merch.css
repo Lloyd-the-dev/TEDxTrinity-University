@@ -168,9 +168,6 @@ body{
     }
 }
 @media (max-width: 890px) {
-    body{
-        margin: 1rem;
-    }
     .first-section-merch h2{
         font-size: 3rem;
         width: 60%;
