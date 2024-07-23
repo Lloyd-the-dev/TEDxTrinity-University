@@ -346,25 +346,29 @@ p {
         width: 100%;
         padding: .6rem;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
     }
     .event-items h2{
-       width: 100%;
-       font-size: 1.2rem;
+       width: 90%;
+       font-size: 1rem;
        display: flex;
        align-items: center;
+       letter-spacing: .2rem;
     }
     .event-items span{
         font-size: 2rem;
+        margin: .7rem;
     }
     .event-items-two{
-        width: 60%;
+        width: 100%;
     }
     .event-items-two h4{
-        font-size: 1rem;
+        font-size: .8rem;
+        width: 100%;
     }
     .event-items-two p{
-        font-size: 1rem;
+        font-size: .7rem;
+        margin-top: .5rem;
     }
     
 }
