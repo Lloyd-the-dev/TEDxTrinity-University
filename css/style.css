@@ -257,28 +257,60 @@
   }
   /* second section stying */
   .second-section{
-    margin: 5rem auto;
+    margin: 8rem auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 90%;
   }
 
-
-
   .image-gallery{
     width: 60%;
     display: grid;
     grid: 150px / auto auto auto;
     gap: 5px;
-    animation: fade-left 1.5s;
+    animation: slidein linear;
+    animation-timeline: view();
   }
   .gallery-image-item{
     width: 200px;
   }
   .section-shalaye{
     width: 40%;
-    line-height: 1.8; 
+    line-height: 1.8;
+    animation: fadein linear;
+    animation-timeline: view();
+    transition: 2s ease;
+  }
+  @keyframes slidein {
+    0%{
+      transform: translateX(-160px);
+    }
+    50%{
+      transform: translateX(10px)
+    }
+    100%{
+      transform: translateX(60px);
+    }
+  }
+  @keyframes slideinright {
+    0%{
+      transform: translateX(160px);
+    }
+    50%{
+      transform: translateX(10px)
+    }
+    100%{
+      transform: translateX(-60px);
+    }
+  }
+  @keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+       opacity: 1;
+    }
   }
   
   .section-shalaye a{
@@ -313,7 +345,7 @@
     }
   }
 .third-section{
-    margin: 10rem auto;
+    margin: 12rem auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -321,7 +353,10 @@
 }
 .third-section-first{
     width: 40%;
+    animation: slidein linear;
+    animation-timeline: view();
 }
+
 .third-section-first h2{
     font-size: 2rem;
     font-weight: 800;
@@ -357,6 +392,8 @@
 }
 .third-section-second{
     width: 40%;
+    animation: slideinright linear;
+    animation-timeline: view();
 }
 .third-section-second-one, .third-section-second-two{
     display: flex;
@@ -392,10 +429,13 @@
     }  
 }
 
+
 .fourth-section{
     width: 80%;
     margin: 6rem auto;
     text-align: center;
+    animation: fadein linear;
+    animation-timeline: view();
 }
 .fourth-section h2{
     font-size: 2.5rem;
@@ -455,6 +495,7 @@
     overflow: hidden;
     position: relative;
 }
+
 .create-img{
     width: 60%;
     animation: transform 1s ease-in-out; 
